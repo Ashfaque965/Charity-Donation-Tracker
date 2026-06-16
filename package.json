@@ -1,0 +1,25 @@
+{
+  "name": "charity-donation-tracker",
+  "version": "1.0.0",
+  "description": "Blockchain-powered charity donation tracking system",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd smart-contracts && npm install && cd ../backend && npm install && cd ../frontend && npm install",
+    "dev:all": "concurrently \"npm run dev:contracts\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:contracts": "cd smart-contracts && npm run develop",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "charity",
+    "donation",
+    "mern"
+  ],
+  "author": "Charity Blockchain Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
